@@ -1,8 +1,13 @@
+import Button from "./Button";
+
+const list = ["All", "Gaming", "Music", "Live", "Football", "Cricket", "Cooking", "News", "Valentines"];
+
 const ButtonList = ()=>{
 
     return (<>
-        <div>
-            ButtonList
+        <div className="flex">
+           {list.map((item)=>(<Button key={item} name = {item}/>))}
+
         </div>
     </>)
 }
